@@ -1,5 +1,5 @@
 # Device Terminal
-Terminal para troca de mensagens sob protocolo TCP-IP, feito usando ElectronJS.
+Terminal para troca de mensagens sob protocolo TCP-IP para Windows/Linux/MacOS, feito usando ElectronJS.
 
 Programa muito usada para ler e enviar mensagens entre hardware e software, tudo sob o protocolo TCP-IP.
 
