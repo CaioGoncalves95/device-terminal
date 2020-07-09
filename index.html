@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <title>Zuchi Device Terminal</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="top">
+    <fieldset>
+      <legend>Configuration</legend>
+
+      <fieldset class="fieldset-top">
+        <legend>Socket</legend>
+        <div class="socket-config">
+          <form class="form">
+            <div>
+              <input type="radio" checked="true" name="socketRadios" value="client" id="rdTCPClient">
+              <label>TCP Client</label>
+            </div>
+            <div>
+              <input type="radio" name="socketRadios" value="server" id="rdTCPServer">
+              <label>TCP Server</label>
+            </div>
+          </form>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset-top">
+        <legend>IP Configuration</legend>
+        <div class="ip-config">
+          <div class="remote">
+            <div id="remote-ip">
+              <label>Remote IP</label>
+              <input type="text" size="10" value="192.168.0.100" id="inRemoteIP">
+            </div>
+            <div id="remote-port">
+              <label>Remote Port</label>
+              <input type="text" value="2051" size="3" id="inRemotePort">
+            </div>
+          </div>
+          <div class="local">
+            <label>Local Port</label>
+            <input type="text" value="2050" size="3" id="inLocalPort" disabled="true">
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="list-connected">
+        <input type="button" value="Open" class="button" id="btnConnect">
+        <input type="button" value="Close" class="button" id="btnClose" disabled>
+        <label class="clients-connected">Clients Connected</label>
+        <select id="clientsConnected">
+          </select>
+      </div>
+
+
+    </fieldset>
+  </div>
+
+
+
+  <div class="mid">
+
+    <fieldset>
+      <p>Message</p>
+      <div class="first-line">
+        <div class="vertical-align">
+          <input type="text" class="input-msg" id="inputText">
+        </div>
+        <div class="radio-mid">
+          <div>
+            <input type="checkbox" id="appendCR">
+            <label>Append CR</label>
+          </div>
+          <div>
+            <input type="checkbox" id="appendLF">
+            <label>Append LF</label>
+          </div>
+        </div>
+        <input type="button" value="Send String" class="button" id="btnSendString">
+      </div>
+
+      <p>File Name</p>
+      <div class="second-line">
+        <div class="vertical-align">
+          <input type="text" class="input-msg" id="fileName">
+        </div>
+        <input type="button" value="Load File" class="button" id="btnLoadFile">
+        <input type="button" value="Send File" class="button" id="btnSendFile">
+      </div>
+
+  </div>
+  </fieldset>
+
+  <div class="bottom">
+    <fieldset>
+      <textarea type="text" class="received-msg" id="receivedText"></textarea>
+    </fieldset>
+  </div>
+
+  <label id="status">Ready</label>
+  <!-- <script src="./renderer.js"></script> -->
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

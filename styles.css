@@ -1,0 +1,131 @@
+body {
+  background-color: rgba(243, 243, 243, 0.863);
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.top {
+  padding-top: 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+p {
+  margin: 1px;
+}
+
+label {
+  margin-right: 2px;
+}
+
+fieldset {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 7px;
+  border-color: rgb(250, 250, 250);
+}
+
+textarea {
+  resize: none;
+}
+
+.socket-config {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-connected {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#clients-connected {
+  margin: 4px;
+}
+
+.ip-config {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  background-color: rgb(190, 190, 190);
+  text-decoration: none;
+  margin: 4px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.remote {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#remote-ip {
+  margin-right: 15px;
+}
+
+.local {
+  margin-top: 10px;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-line {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.radio-mid {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-line {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-msg {
+  height: 13px;
+  width: 410px;
+}
+
+.received-msg {
+  height: 200px;
+  width: 100%;
+}
+
+.vertical-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fieldset-top {
+  display: block;
+  float: left;
+}
