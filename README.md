@@ -5,6 +5,6 @@ Programa muito usada para ler e enviar mensagens entre hardware e software, tudo
 
 Para rodar a aplicação:
 
-1 - Clone o repositório
-2 - No terminal, digite npm install
-3 - Para executar, npm run start
+1 - Clone o repositório <br>
+2 - No terminal, digite npm install <br>
+3 - Para executar, npm run start <br>
